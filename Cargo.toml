@@ -1,5 +1,5 @@
 [package]
-name = "" # enter project name
+name = "template" # enter your project name
 version = "0.1.0"
 edition = "2021"
 
