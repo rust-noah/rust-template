@@ -93,3 +93,20 @@ cargo install cargo-nextest --locked
 3. pre-commit install
 
 4. Change the package.name in the Cargo.toml file to the name of the new project.
+
+Note:
+- If git commit encounters problems, please delete `deny.toml` and then execute `cargo deny init`
+  - Add the code below to licenses.
+      ```toml
+      unlicensed = "allow"
+      allow = [
+      "MIT",
+      "Apache-2.0",
+      "Unicode-DFS-2016",
+      "MPL-2.0",
+      "BSD-2-Clause",
+      "BSD-3-Clause",
+      "ISC",
+      "CC0-1.0",
+      ]
+      ```
