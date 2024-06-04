@@ -83,6 +83,6 @@ cargo install cargo-nextest --locked
 ```
 
 ## 模版使用方法
-1. cargo generate upupnoah/rust-template
-2. 进入目录, 修改 cliff.toml 文件, 将 replace=后面的 URL 改为自己的仓库地址
+1. cargo generate rust-noah/rust-template
+2. 进入目录, 修改 cliff.toml 文件, 将 replace=后面的 URL 改为自己的仓库地址(需要先创建仓库)
 3. pre-commit install
