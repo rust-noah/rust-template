@@ -1,88 +1,90 @@
 # Rust Template
 
-## 环境设置
+## Environment settings
 
-### 安装 Rust
+### Install Rust
 
 ```bash
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
-### 安装 VSCode 插件
+### Install VSCode Extensions
 
-- crates: Rust 包管理
-- Even Better TOML: TOML 文件支持
-- Better Comments: 优化注释显示
-- Error Lens: 错误提示优化
-- GitLens: Git 增强
-- Github Copilot: 代码提示
-- indent-rainbow: 缩进显示优化
-- Prettier - Code formatter: 代码格式化
-- REST client: REST API 调试
-- rust-analyzer: Rust 语言支持
-- Rust Test lens: Rust 测试支持
-- Rust Test Explorer: Rust 测试概览
-- TODO Highlight: TODO 高亮
-- vscode-icons: 图标优化
-- YAML: YAML 文件支持
+- crates: Rust package management
+- Even Better TOML: TOML file support
+- Better Comments: Optimized comment display
+- Error Lens: Improved error prompts
+- GitLens: Enhanced Git features
+- Github Copilot: Code suggestions
+- indent-rainbow: Indentation display optimization
+- Prettier - Code formatter: Code formatting tool
+- REST client: REST API debugging tool
+- rust-analyzer：Rust language support
+- Rust Test lens：Rust test support
+- Rust Test Explorer：Rust test overview
+- TODO Highlight：TODO highlighting
+- vscode-icons：Icon optimization
+- YAML：YAML file support
 
-### 安装 cargo generate
+### Install cargo generate
 
-cargo generate 是一个用于生成项目模板的工具。它可以使用已有的 github repo 作为模版生成新的项目。
+cargo generate is a tool for generating project templates. It can use an existing GitHub repo as a template to generate a new project.
 
 ```bash
 cargo install cargo-generate
 ```
-
-新的项目会使用 `upupnoah/rust-template` 模版生成基本的代码：
+The new project will use the `upupnoah/rust-template` template to generate basic code:：
 
 ```bash
 cargo generate upupnoah/rust-template
 ```
 
-### 安装 pre-commit
+### Install pre-commit
 
-pre-commit 是一个代码检查工具，可以在提交代码前进行代码检查。
+pre-commit is a code checking tool that can perform code checks before committing code.
 
 ```bash
 pipx install pre-commit
 ```
 
-安装成功后运行 `pre-commit install` 即可。
+After successful installation, run `pre-commit install`.
 
-### 安装 Cargo deny
+### Install cargo-deny
 
-Cargo deny 是一个 Cargo 插件，可以用于检查依赖的安全性。
+Cargo deny is a Cargo plugin that can be used to check the security of dependencies.
 
 ```bash
 cargo install --locked cargo-deny
 ```
 
-### 安装 typos
+### Install typos
 
-typos 是一个拼写检查工具。
+Typos is a spell checking tool.
 
 ```bash
 cargo install typos-cli
 ```
 
-### 安装 git cliff
+### Install git-cliff
 
-git cliff 是一个生成 changelog 的工具。
+git cliff is a tool for generating changelogs.
 
 ```bash
 cargo install git-cliff
 ```
 
-### 安装 cargo nextest
+### Install cargo nextest
 
-cargo nextest 是一个 Rust 增强测试工具。
+cargo nextest is an enhanced testing tool for Rust.
 
 ```bash
 cargo install cargo-nextest --locked
 ```
 
-## 模版使用方法
+## Template Usage
+
 1. cargo generate rust-noah/rust-template
-2. 进入目录, 修改 cliff.toml 文件, 将 replace=后面的 URL 改为自己的仓库地址(需要先创建仓库)
+
+2. Enter the directory, modify the cliff.toml file, change the URL after replace= to your own repository address (you need to create a repository first)
+
 3. pre-commit install
