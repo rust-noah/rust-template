@@ -86,6 +86,9 @@ cargo install cargo-nextest --locked
 1. cargo generate rust-noah/rust-template
 
 2. Enter the directory, modify the cliff.toml file, change the URL after replace= to your own repository address (you need to create a repository first)
+   1. Create an empty repository on GitHub (excluding README, .gitignore, and LICENSE).
+   2. cd new-project-dir (Name of the new project)
+   3. Execute the command in the empty project created in step 1 (git remote add ...)
 
 3. pre-commit install
 
