@@ -88,3 +88,5 @@ cargo install cargo-nextest --locked
 2. Enter the directory, modify the cliff.toml file, change the URL after replace= to your own repository address (you need to create a repository first)
 
 3. pre-commit install
+
+4. Change the package.name in the Cargo.toml file to the name of the new project.
